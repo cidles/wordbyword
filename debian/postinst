@@ -1,0 +1,9 @@
+#! /bin/sh
+
+mkdir -p /home/user/MyDocs/.documents/wordbyword
+cp /opt/wordbyword/courses/de-pt.yml /home/user/MyDocs/.documents/wordbyword/
+cp /opt/wordbyword/courses/de-ru.yml /home/user/MyDocs/.documents/wordbyword/
+cp /opt/wordbyword/courses/pt-mind.yml /home/user/MyDocs/.documents/wordbyword/
+
+gtk-update-icon-cache -f /usr/share/icons/hicolor
+

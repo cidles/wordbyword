@@ -1,0 +1,60 @@
+Description
+-----------
+WordByWord is a simple vocabulary trainer that takes an ordered list of
+words in two languages and presents you the words in random order. You
+may guess each word and then display the solution. WordByWord supports
+several modes for learning: you may just display the words, answer
+multiple choice questions or input the correct translation for the
+given word.
+WordByWord uses YAML input files and is based on the Qt Framework. The
+program is written in Python. So WordByWord is platform independant, in
+fact I wanted it to be usable on the Nokia N810 internet tablet in the
+first place. See the screenshots on the side to see WordByWord running
+on a desktop and on the tablet.
+
+The software is licensed under the GNU General Public License.
+
+
+Requirements
+------------
+You need to install the following packages to run WordByWord:
+
+- Python
+- PyQt
+- PyYAML (is included in the Maemo download package)
+
+This package contains the Python source of WordByWord (and for Maemo a
+copy of PyYAML). So everything is included to start the program on any
+platform, including the Nokia N810 internet tablet.
+
+
+Usage
+-----
+Unpack the package and change into the created directory:
+
+$ tar xzf wordbyword-0.2.0.tar.gz
+$ cd wordbyword-0.2.0
+
+Then, to start the program:
+
+$ python wordbyword.py
+
+A sample file for vocabulary learning (learning Portuguese for Germans)
+is included in the package. Just open the file "courses/de-pt.yml" and
+see WordByWord in action.
+The sample file shows the how lessons and words are organized in YAML,
+you may extend the file or write new YAML files according to the format
+in the sample file. 
+
+
+Site and contact
+----------------
+The website of this project is:
+
+http://www.peterbouda.de/downloads/wordbyword
+
+If you have any questions or ideas about pyannation just write an email
+to:
+
+p.bouda@gmx.de
+

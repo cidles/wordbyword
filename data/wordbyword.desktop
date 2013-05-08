@@ -1,0 +1,14 @@
+
+[Desktop Entry]
+Name=WordByWord
+GenericName=Vobulary Trainer
+GenericName[de]=Vokabeltrainer
+Comment=WordByWord is a simple vocabulary trainer that takes an ordered list of words in two languages and presents you the words in random order.
+Comment[de]=WordByWord ist ein einfacher Vokaltrainer, der nach Lektionen sortierte Wörter abfragt.
+Exec=wordbyword
+Icon=wordbyword
+Terminal=false
+Type=Application
+Categories=Education;Qt
+Encoding=UTF-8
+Version=0.2

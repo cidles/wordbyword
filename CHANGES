@@ -1,0 +1,14 @@
+from 0.1.1 to 0.2.0:
+* TTS for included courses
+* new courses: russian and minderico, portuguese extended
+* background image and fonts changed
+* line break for long entries
+* minor bugs fixed
+
+from 0.1 to 0.1.1:
+* Bugfix(?) for "Quit" in menu on Windows; did not work
+* Open .yml when given as command line argument
+* About window
+* updated course: de-pt (Portuguese for Germans)
+* new course: pt-mind (Minderico for Portuguese)
+* support for start.ini: contains the course that should be opened automatically on startup

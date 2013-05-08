@@ -1,0 +1,85 @@
+Source: wordbyword
+Section: user/education
+Priority: optional
+Maintainer: Peter Bouda <p.bouda@gmx.de>
+Build-Depends: debhelper (>= 5), libqt4-core, libqt4-gui, libqt4-phonon, python2.5-qt4-common, python2.5-sip4, python2.5-qt4-core, python2.5-qt4-gui, python2.5-qt4-phonon
+Standards-Version: 3.7.3
+Homepage: http://www.peterbouda.de/downloads/wordbyword
+
+Package: wordbyword
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-core, libqt4-gui, libqt4-phonon, python2.5-qt4-common, python2.5-sip4, python2.5-qt4-core, python2.5-qt4-gui, python2.5-qt4-phonon
+Description: WordByWord is a simple vocabulary trainer.
+ WordByWord is a simple vocabulary trainer that takes an ordered list of words
+ in two languages and presents you the words in random order. You may guess
+ each word and then display the solution. WordByWord supports several modes
+ for learning: you may just display the words, answer multiple choice
+ questions or input the correct translation for the given word.
+XSBC-Bugtracker: https://bugs.maemo.org/enter_bug.cgi?product=WordByWord
+XSBC-Maemo-Display-Name: WordByWord Vocabulary Trainer
+XB-Maemo-Icon-26:
+  iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c
+  6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0
+  SU1FB9oCDwsLEK/E8JEAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJ
+  TVBXgQ4XAAAKqklEQVRo3u2Ya4xd1XXHf2vvc859zL133jN+DEOJH9gxfgQT
+  MLYJJGqhhCZNGlIqQa1UaSBSQ1IhVUkrVZRSkTaJGgnUijxAIa0JCSkJTqom
+  GJsYCn4CtuMXA7bHb3vsed+5r3P2Xv1wB9vgR2zDh36Y/6eje/ZdZ63/Wv+1
+  1jkwgQlMYAIXhF+qAVhzpDr7/TQbAPCT7UKcCx+9rnOyMRKh/tKMBaEWwsRl
+  jA7fNikzcPLGEz7s0tH25X3x12bk7b0HS264K2ub3vHnx46G31xc6JrfEkwd
+  qOmI1/M/yxiLcYT1AOjKUvFTPzk1Wpc20oxcIh0KHksx0Z/87dbasq/Pi6p8
+  Y6+QG82VMfNPxNw0AzAi+Z4R9+DMgv17AB4vpjCVzrK3ty9qCb/hlboL436U
+  EkVESBnOcC1gxRpDzTaQk6u+szd+LRRtRy8tBCsSt6TkeGRY+WzvcQNA3yah
+  +9ag35G7/X9Lb+y8NXdlPjRRLuTvfnW48p9fW53q2WyHQ7ztfr4vubzodOOB
+  sh/zKibxGuQDCl+fm55T9er//a3atp6iDqIgBpsyBMK/qqFlpIWsLAQWINKE
+  qq3zecEQFEWo4HU33q7laGYf99lavf5PZKkG80jks61p87GeP8wtqHqlkuj6
+  D+TtIlbUslQqs1B/DdgOLAFKgNcpf3Z5sPTb89PT+6p+5K4N1ad+O6zHUK8I
+  BjDB83e6xZ1R/vqjVZ8fjCnEXsNLFZQRsg2BpDsimdoSSSl9j3ega7vv3v46
+  n+reg8ja/pLv+s5b1SlfmpnqsCLX/fpY9cZbOqM19seDe50L+hGXxmGwQZaa
+  X3hje7BI69k9vr/sfoxylEQVUQEkGE385z7UbD8/OWsR4ZLLn9NSplq/9gol
+  pw+yfN6r3FMd5ERtKyLdD70RF7oazIwNx9z3o0j6+Gs1blO5+N/3RXN+OxAP
+  DMbq9pUxz/dp1J6SNEBkqF7baIofKhhvjagRpSEdOrljXfnxm9rMolgx72d7
+  S4mUOjMciZDvf3xq+DMAnqnmcPEcNPkwaj1WNkOyg2JUYyhpeuWu7Pem5ezH
+  /bh+rYAbJ0NVMSJn1LXw1NBf4MwkhAinjkRjeC99CCUQi5Uxamwm1q2/11IY
+  6f2MeK5ZLtx3Ww6kFWMU54aMbRjztpqnolc/sDD86vSMmVb1eKcEKuRvaLfN
+  jaHIliE3eGhMB4wgsVc7q9E2z8ibQkCUXoW6LGMueGBhaunSNnuzvzgBc1rH
+  85FBXx/SFV/ZHL9C2hcp+krvpr32xb54yTe3lXb2JYJLZcZSWnIL05F7eFbi
+  WFnzZKLk/m21X5PQDASItF3VIgsXt2WaRDAPbK+uWnfE7cYS4ei6f0F60fS8
+  KQQcTx0kN5phTNs/kJO5H2wMPq2q76l8OiL/Mr98dT835JX8tCz5jo6Zefvi
+  dxcXTktU/frhtAg/PF6iIdkF/gRBFGF9Cq+zpudsd2Mo1iAcqvI0KfYgFIDr
+  05YF9Tlwj3geG4E8nT894PzRSu1V5zHjpF54JKKaMqY8JS2HDLqN6xc7Rq1Q
+  KDcyubbECiQo40NKEcQANOwJWNYeA8fgmT74NDw0nKNbGtOqtcgIIsqBH5VX
+  s75tmHuHmyjIFCtUT60SzenEaHX42d549bNvVLcgJrj46lePZ5Sibmc4tbuw
+  IMPIm0VBvCVrmj63obyy6Gmsec23RtK8/LrspIoDHmxpeunP46WZwHSWYh1E
+  nJyoZbMbB/xVU9My3QiM1LT46D803nJlIdG+SrbhpX4/r6tBGuVk6a46aNka
+  Fh65rekTC1uCT7g68Xrxi5W4bEBN0B/MawpeYJcKW0aaEDMHI1fgkxYwcy5v
+  kKXbbsnNrjpoW15c9F83p7+wpC34vJ6VF1UREc5xr8707lRIKM2NKbnxyry5
+  Xd/DDPCqjNXYCrzALFH+R0cpDWwF6UFtM8ZXjbFzvFLv21Ey/TfHXWvsdW+C
+  +PE5YpxinWooiFrR2CDu7Xnv0SBRQjlZQoWUxfiOf3mj1v/MweQ5pwQX30hV
+  U0aGL8vKjpzoKjaMCNcWlFslAUb47vEiLaHDaVGU5GTQMQOP7KqufMT7DSDC
+  qC8iRkBDhABE8RqDSUDr6jEEiIb4twPIpxNGKwM7hnXtjmG3G/TiNYB4hDHj
+  eMuk2Cf78u+swbvbPU/2K2F48menQEV3UuBNfJidlIrbN3+m6XnzLvb07C37
+  tPeBw4cgaB1d/UfpJVakTUEuZZIZ8FkrSwVd9fKJytNf+sr5daQAAzL01SWZ
+  6BdHa/boWNgWezQUlb6ajjmPP5cjTtH2lDQE9KnwcjVHKZ7VlbZ35UPpDEUJ
+  zcU6L1S9UlNhsObTaweiFUD5nGJhXAPNTPniNPtv0xqi1V/eXE15kEwg3Lex
+  /Mr+MR2yRvUU5woq4iF1ouybVtyQXRiwar8QtOUxfkHFa5RV9D96k51/s6Wy
+  hcBcQBhe8SYkcfl/mp/64BenpbrKDru3OBick/dxs8bAozdnH2oIzE13dJub
+  7t9RfUK1vgQO1eQ3PcWkBzFvb56gKDiD2FaKem3suTpg8IjQ3hwABa9YgM4U
+  B/D+OfzvaKX1UWcQzaE6z8NcqS9gJg7PksNTRApA1an+SVf4xxWnyZ3rq98a
+  jP1kARKFmVl9bdPBaD2hV4ycyl4QGiTpwmmrgA+IJkFyaugKcHnGvMUPjv2M
+  KxvOv6N6hYIVOm076SgBPnrKTMNZzgdgEX/KqsSKrut361YeiXuyobSL1M22
+  pswo/+iG2JN7J4kPq2VKpYBKWeQd3eaUWjqysnTTU9MeCuXCmmkx0UzPqHZf
+  ljVt7nwHsxac147xHR9EUV/90+eK/0yjqaGmquOeeK/CjAZhz7uqQBESL+MK
+  IjjpeN1ZAZHWlMzvFOZfjIjnNkKsUDvvBw01lLH3fjjs9kDJaTz9p6NfIB/t
+  RJI2hJP/vr7DXrfsiVohZeLTVUysNdk+0tD+i8NudsYSBNQOQ6EFnJK2mJSF
+  l/qSYz8/nPSGVi5sCVLCkVgbb+8KJt86KWwIDIGRMxsQVa+kTXXZhsqax65h
+  6dr+5EkC3SSxP67QRFAnO1H1n5wSfetcApzdAndOg+FYCWjuUsQkWEYe2F7b
+  1RCgvWP62srD8S6s/G4ROwSrGZxc0Tvm520Y8GOhkV/tGxhLzjjfGJQYrr2p
+  1q68e2NllYrdQBAf1CBbQ2OPeoNCLhTzBy+W1vSWfP9ZOBSvZI9WfOcLNzbM
+  DvhIl7K+XMTp9if3Jk/g6UfcTjJmCK8Of573MwGcgJgsAVds7NetG4/GA/hk
+  PVFb7YzzuWyFcvwmiQ4kohDXBtj4eomrP2JJJWBM4lGcCsWELcfKuveMZyuC
+  aCMVZu4v+Y767R+VIqKkCfU5PGUKdpjJuSqm3nnPO0otcMJZ+ot5RAskQYKR
+  QZpMmd/PnqmIv9ohfLTVcDgQvtxaz9LPhwMqbnoQBp9a1h1+7LKMHPrh/uTx
+  vSU9gLyrmXsRLM3i/VxNmH4qvhcSoR+DAp8N3EXvEU/HgoqpZ8x47jAXvtR+
+  b4fQ1NWGZw5G28HupxL20MQIvafZUaDRCS1EVFw7Kk3v5SvK+/zx93iIS2eo
+  JhE6ViWnJW677NxErqpaRvcE/L/DX44aJjCBCUxgAhOYwAQmcEH4PxuIAg2o
+  KCYNAAAAAElFTkSuQmCC
