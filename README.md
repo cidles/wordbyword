@@ -70,7 +70,7 @@ The website of this project is:
 
 http://media.cidles.eu/labs/wordbyword/
 
-If you have any questions or ideas about pyannation just write an email
+If you have any questions or ideas about WordByWord just write an email
 to:
 
 pbouda@cidles.eu
