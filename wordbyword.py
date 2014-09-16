@@ -99,7 +99,7 @@ class WordByWordWindow(QtGui.QMainWindow):
         self.coursepath = None
         self.radiobuttonsSolution = None 
         # Play mp3 on Windows and Mac and ogg elsewhere
-        if os.name == 'nt' or os.name == 'mac':
+        if os.name == 'nt' or os.name == 'mac' or os.name == 'posix':
             self.audiotype = "mp3"
         else:
             self.audiotype = "ogg"
@@ -255,7 +255,23 @@ class WordByWordWindow(QtGui.QMainWindow):
         about = QtGui.QMessageBox(self)
         about.setTextFormat(QtCore.Qt.RichText)
         about.setWindowTitle(self.tr("About WordByWord"))
-        about.setText(self.tr("<b>WordByWord 0.2.0</b><br/>vocabulary trainer by Peter Bouda.<br/><br/>All rights reserved. See LICENSE file for details.<br/><br/>For more information visit the website:<br/><a href=\"http://www.peterbouda.de/downloads/wordbyword\">http://www.peterbouda.de/downloads/wordbyword</a><br/><br/>Audio files were produced with <a href=\"http://www.linguatec.de/products/tts/voice_reader/vrs\">Linguatec's Voice Reader Studio</a>."))
+        about.setText(self.tr("""<b>WordByWord 1.0.0</b><br/>
+            vocabulary trainer developed by Vera Ferreira, Peter Bouda and Ricardo Filipe at <a href=\"http://cidles.eu\">CIDLeS</a><br/>
+            <br/>
+            Supported by <a href=\"http://www.ogmios.org\">Foundation for Endangered Languages</a><br/>
+            <br/>
+            All rights reserved. See LICENSE file for details.<br/>
+            <br/>
+            For more information visit the website:<br/>
+            <a href=\"http://media.cidles.eu/labs/wordbyword\">http://media.cidles.eu/labs/wordbyword/</a><br/>
+            <br/>Audio files were produced by:
+            <ul>
+                <li>Minderico: Elsa Nogueira, Rita Pedro, Pedro Manha (Minderico speakers)</li>
+                <li>Portuguese: <a href=\"http://www.linguatec.de/products/tts/voice_reader/vrs\">Linguatec's Voice Reader Studio</a></li>
+                <li>Russian: <a href=\"http://www.linguatec.de/products/tts/voice_reader/vrs\">Linguatec's Voice Reader Studio</a></li>
+            </ul>
+            <br/>
+            """))
         about.exec_()
 
     def prevWord(self):
