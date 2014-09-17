@@ -110,7 +110,7 @@ class WordByWordWindow(QtGui.QMainWindow):
         fontsizelabel = 16
         if os.environ.has_key("OSSO_PRODUCT_NAME"):
             fontsizelabel = 24
-        self.setStyleSheet("QMainWindow { background: white url(background.png); background-repeat: repeat-x; } \
+        self.setStyleSheet("QMainWindow { border-image: url(background.jpg) 0 0 0 0 stretch stretch; } \
                             QPushButton { background: white; } \
                             QLabel#labelDisplayArea { font-family: serif; color:blue; font-size:%spx; font-weight:bold; } \
                             QLabel#labelSolution { font-family: serif; color:blue; font-size:%spx; font-weight:bold; }" % (fontsizelabel, fontsizelabel))
