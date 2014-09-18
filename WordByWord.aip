@@ -5,11 +5,12 @@
     <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:2"/>
     <ROW Property="ARPCOMMENTS" Value="WordByWord is a simple vocabulary trainer developed at CIDLeS" ValueLocId="*"/>
     <ROW Property="ARPCONTACT" Value="pbouda@cidles.eu"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="+351249849123"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPURLINFOABOUT" Value="http://media.cidles.eu/labs/wordbyword/"/>
     <ROW Property="AiPreventAutoPin" Value="System.AppUserModel.ExcludeFromShowInNewInstall"/>
     <ROW Property="CTRLS" Value="3"/>
-    <ROW Property="Manufacturer" Value="CIDLeS"/>
+    <ROW Property="Manufacturer" Value="CIDLeS - Interdisciplinary Centre for Social and Language Documentation"/>
     <ROW Property="ProductCode" Value="1033:{9223E4C7-E12F-4FE0-B340-68EFFD7147CB} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="WordByWord"/>
@@ -2421,7 +2422,7 @@
     <ROW MsiShortcutProperty="WordByWordAprenderMinderico1" Shortcut_="WordByWordAprenderMinderico" PropertyKey="[AiPreventAutoPin]" PropVariantValue="1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\..\..\Desktop" PackageFileName="wbw" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\..\..\Desktop" PackageFileName="wordbyword-1.0.0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
     <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
