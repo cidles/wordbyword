@@ -1,35 +1,41 @@
 Description
 -----------
-WordByWord is a simple vocabulary trainer developed by Vera Ferreira, 
-Peter Bouda and Ricardo Filipe at CIDLeS with the support of the
-Foundation for Endangered Languages. 
-WordByWord takes an ordered list of words in two languages and presents
-you the words in random order. You may guess each word and then 
-display the solution. WordByWord supports several modes for learning: 
-you may just display the words, answer multiple choice questions or 
-input the correct translation for the given word.
-WordByWord uses YAML input files and is based on the Qt Framework. The
-program is written in Python. So WordByWord is platform independent.
-See the screenshots on the site to see WordByWord running
-on a desktop.
+WordByWord is an easy-to-use multimedia vocabulary trainer that takes an ordered list of words in two languages, organized in lessons, and presents you the words in random order. It also allows the user to listen to the pronunciation of the words. The main language course in WordByWord is Minderico for Portuguese speakers (WordByWord - Aprender Minderico) but the program is flexible enough to easily adapt to other languages (as you can see in the sample courses for Portuguese and Russian for German speakers included in the package).
+
+The exercises are presented in the source language (for instance Portuguese in the case of WordByWord - Aprender Minderico) and the answers should be given in the target language (for instance Minderico in WordByWord - Aprender Minderico). For each lesson there are three modes of interaction with different difficulty levels: multiple choice questions, a fill out mode (to input the correct translation for the word shown and practice writing), and a display mode (a word in the source language is shown and the user is supposed to say the word in the target language aloud – an excercise to train the pronunciation). 
+
+The audio files for Minderico were created by three Minderico speakers (Elsa Nogueira, Rita Pedro, and Pedro Manha). The audio files for Portuguese and Russian were created with Linguatec Voice Reader Studio.
+
+WordByWord uses YAML input files and is based on the Qt Framework. The program is written in Python. So WordByWord is platform independent.
 
 The software is licensed under the GNU General Public License (see 
 LICENSE file).
 
 
-Requirements
+Installation
 ------------
-You need to install the following packages to run WordByWord from the source code:
+Windows users only need to download and install the setup package available below. To install WordByWord v1.0.0 you need to uninstall any previous versions beforehand.
+
+To run WordByWord from the source code you need to install the following packages :
 
 - Python
-- PyQt
-- PyYAML (is included in the Maemo download package)
+- PyQt (you might need to also do a "apt-get install phonon*" to install Phonon)
+- PyYAML 
 
-This package contains the Python source of WordByWord (and for Maemo a
-copy of PyYAML). So everything is included to start the program on any
-platform, including the Nokia N810 internet tablet.
 
-Unpack the package and change into the created directory:
+Download
+--------
+
+- Windows setup: wordbyword-1.0.0.exe
+- Source code package for all platforms: wordbyword-1.0.0.tar.gz
+
+
+Usage
+-----
+
+On Windows you just install the software by starting the .exe package you downloaded above. An entry in the start menu will automatically be created. 
+
+For Linux and Mac unpack the source code package and change into the created directory:
 
 $ tar xzf wordbyword-1.0.0.tar.gz
 $ cd wordbyword-1.0.0
@@ -39,21 +45,11 @@ Then, to start the program:
 $ python wordbyword.py
 
 
-Download
---------
-
-- Windows setup: wordbyword-1.0.0.exe
-- TAR.GZ for all other platforms: wordbyword-1.0.0.tar.gz
-
-
-Usage
------
-
-Sample files for vocabulary learning included in the package:
+Course files for vocabulary learning included in the program:
 
 - Minderico for Portuguese speakers
-- Portuguese for German speakers
-- Russian for German speakers
+- Portuguese for German speakers (sample file)
+- Russian for German speakers (sample file)
 
 Just open the files inside the "courses" folder and
 see WordByWord in action.
@@ -71,4 +67,4 @@ http://media.cidles.eu/labs/wordbyword/
 If you have any questions or ideas about WordByWord just write an email
 to:
 
-pbouda@cidles.eu
+vferreira@cidles.eu or pbouda@cidles.eu
