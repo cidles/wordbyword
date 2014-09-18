@@ -1,6 +1,8 @@
 Description
 -----------
-WordByWord is an easy-to-use multimedia vocabulary trainer that takes an ordered list of words in two languages, organized in lessons, and presents you the words in random order. It also allows the user to listen to the pronunciation of the words. The main language course in WordByWord is Minderico for Portuguese speakers (WordByWord - Aprender Minderico) but the program is flexible enough to easily adapt to other languages (as you can see in the sample courses for Portuguese and Russian for German speakers included in the package).
+WordByWord is a free, open source, easy-to-use multimedia vocabulary trainer developed by Vera Ferreira, Peter Bouda, and Ricardo Filipe at CIDLeS with the support of the Foundation for Endangered Languages. 
+
+WordByWord takes an ordered list of words in two languages, organized in lessons, and presents the words in random order. It also allows the user to listen to the pronunciation of the words in the target language. The main language course in WordByWord is Minderico for Portuguese speakers (WordByWord - Aprender Minderico) but the program is flexible enough to easily adapt to other languages (as you can see in the sample courses of Portuguese and Russian for German speakers included in the package).
 
 The exercises are presented in the source language (for instance Portuguese in the case of WordByWord - Aprender Minderico) and the answers should be given in the target language (for instance Minderico in WordByWord - Aprender Minderico). For each lesson there are three modes of interaction with different difficulty levels: multiple choice questions, a fill out mode (to input the correct translation for the word shown and practice writing), and a display mode (a word in the source language is shown and the user is supposed to say the word in the target language aloud – an excercise to train the pronunciation). 
 
