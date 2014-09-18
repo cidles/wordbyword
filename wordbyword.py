@@ -103,18 +103,19 @@ class WordByWordWindow(QtGui.QMainWindow):
             self.audiotype = "mp3"
         else:
             self.audiotype = "ogg"
-        print >>sys.stderr, "Play audio type %s" % self.audiotype
+        #print >>sys.stderr, "Play audio type %s" % self.audiotype
 
         self.setObjectName("MainWindow")
         self.setWindowTitle("WordByWord")
-        fontsizelabel = 16
+        fontsizelabel = 18
         if os.environ.has_key("OSSO_PRODUCT_NAME"):
             fontsizelabel = 24
-        self.setStyleSheet("QMainWindow { border-image: url(background.jpg) 0 0 0 0 stretch stretch; } \
+        self.setStyleSheet("QMainWindow { background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 rgba(230, 230, 230, 255), stop:1 rgb(175, 175, 175, 255)); } \
                             QPushButton { background: white; } \
                             QLabel#labelDisplayArea { font-family: serif; color:blue; font-size:%spx; font-weight:bold; } \
                             QLabel#labelSolution { font-family: serif; color:blue; font-size:%spx; font-weight:bold; }" % (fontsizelabel, fontsizelabel))
-        self.resize(696, 396)
+        self.resize(750, 450)
+        self.setFixedSize(self.size())
         self.hboxLayoutWidget = QtGui.QWidget(self)
         self.hboxLayout = QtGui.QHBoxLayout(self.hboxLayoutWidget)
         self.hboxLayout.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)

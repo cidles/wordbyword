@@ -1,1 +1,1 @@
-c:\Python27\Scripts\cxfreeze.bat --include-modules="encodings.ascii,encodings.utf_8,sip" --target-dir=dist_win wordbyword.py
+c:\Python27\Scripts\cxfreeze.bat --base-name=Win32GUI --include-modules="encodings.ascii,encodings.utf_8,sip" --target-dir=dist_win wordbyword.py
