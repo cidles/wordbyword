@@ -28,14 +28,14 @@ To run WordByWord from the source code you need to install the following package
 Download
 --------
 
-- Windows setup: wordbyword-1.0.0.exe
+- Windows setup: wordbyword-1.0.0.msi
 - Source code package for all platforms: wordbyword-1.0.0.tar.gz
 
 
 Usage
 -----
 
-On Windows you just install the software by starting the .exe package you downloaded above. An entry in the start menu will automatically be created. 
+On Windows you just install the software by starting the .msi package you downloaded above. An entry in the start menu will automatically be created. 
 
 For Linux and Mac unpack the source code package and change into the created directory:
 

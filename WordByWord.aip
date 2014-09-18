@@ -7,6 +7,7 @@
     <ROW Property="ARPCONTACT" Value="pbouda@cidles.eu"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPURLINFOABOUT" Value="http://media.cidles.eu/labs/wordbyword/"/>
+    <ROW Property="AiPreventAutoPin" Value="System.AppUserModel.ExcludeFromShowInNewInstall"/>
     <ROW Property="CTRLS" Value="3"/>
     <ROW Property="Manufacturer" Value="CIDLeS"/>
     <ROW Property="ProductCode" Value="1033:{9223E4C7-E12F-4FE0-B340-68EFFD7147CB} " Type="16"/>
@@ -2416,6 +2417,9 @@
     <ROW File="wordbyword_de.qm" Component_="_hashlib.pyd" FileName="WORDBY~1.QM|wordbyword_de.qm" Attributes="0" SourcePath="dist_win\locale\wordbyword_de.qm" SelfReg="false" NextFile="wordbyword_pt.qm"/>
     <ROW File="wordbyword_pt.qm" Component_="_hashlib.pyd" FileName="WORDBY~2.QM|wordbyword_pt.qm" Attributes="0" SourcePath="dist_win\locale\wordbyword_pt.qm" SelfReg="false" NextFile="LICENSE"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.custcomp.MsiShortcutPropertyComponent">
+    <ROW MsiShortcutProperty="WordByWordAprenderMinderico1" Shortcut_="WordByWordAprenderMinderico" PropertyKey="[AiPreventAutoPin]" PropVariantValue="1"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\..\..\Desktop" PackageFileName="wbw" Languages="en" InstallationType="4" UseLargeSchema="true"/>
     <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
@@ -2486,6 +2490,7 @@
     <ROW Action="AI_SETMIXINSTLOCATION" Type="1" Source="aicustact.dll" Target="MixedAllUsersInstallLocation"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_SelectAutoPinOption" Type="51" Source="AiPreventAutoPin" Target="System.AppUserModel.StartPinOption"/>
     <ROW Action="AI_ViewReadme" Type="1" Source="aicustact.dll" Target="[#readme.txt]"/>
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder][ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[DesktopFolder]"/>
@@ -2501,6 +2506,7 @@
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
     <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+    <ROW Action="AI_SelectAutoPinOption" Condition="VersionNT &gt; 601" Sequence="1401"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
@@ -2519,9 +2525,9 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="Uninstall" Directory_="WordByWord_Dir" Name="UNINST~1|Uninstall" Component_="ae3071c025e3bc7bde19.mp3" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
     <ROW Shortcut="WordByWord" Directory_="SHORTCUTDIR" Name="WORDBY~1|WordByWord" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Description="WordByWord is a simple vocabulary trainer" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="WordByWordAprenderMinderico" Directory_="WordByWord_Dir" Name="WORDBY~2|WordByWord - Aprender Minderico" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Arguments="\courses\pt-mind.yml" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="WordByWordAprenderMinderico1" Directory_="WordByWord_Dir" Name="WORDBY~5|WordByWord - Portugiesisch lernen" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Arguments="\courses\de-pt.yml" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="WordByWordAprenderMinderico2" Directory_="WordByWord_Dir" Name="WORDBY~3|WordByWord - Russisch lernen" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Arguments="\courses\de-eu.yml" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="WordByWordAprenderMinderico" Directory_="WordByWord_Dir" Name="WORDBY~2|WordByWord - Aprender Minderico" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Arguments="courses\pt-mind.yml" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="WordByWordAprenderMinderico1" Directory_="WordByWord_Dir" Name="WORDBY~5|WordByWord - Portugiesisch lernen" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Arguments="courses\de-pt.yml" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="WordByWordAprenderMinderico2" Directory_="WordByWord_Dir" Name="WORDBY~3|WordByWord - Russisch lernen" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Arguments="courses\de-eu.yml" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
     <ROW Shortcut="WordByWord_1" Directory_="DesktopFolder" Name="WORDBY~1|WordByWord" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Description="WordByWord is a simple vocabulary trainer" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
     <ROW Shortcut="WordByWord_2" Directory_="WordByWord_Dir" Name="WORDBY~1|WordByWord" Component_="wordbyword.exe" Target="[#wordbyword.exe]" Description="WordByWord is a simple vocabulary trainer" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
   </COMPONENT>
