@@ -7,12 +7,13 @@
     <ROW Property="ARPCONTACT" Value="pbouda@cidles.eu"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPURLINFOABOUT" Value="http://media.cidles.eu/labs/wordbyword/"/>
-    <ROW Property="CTRLS" Value="1"/>
+    <ROW Property="CTRLS" Value="3"/>
     <ROW Property="Manufacturer" Value="CIDLeS"/>
     <ROW Property="ProductCode" Value="1033:{9223E4C7-E12F-4FE0-B340-68EFFD7147CB} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="WordByWord"/>
     <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{9221206F-D89D-4737-843E-7B777AD0B830}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -53,13 +54,12 @@
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="LICENSE" Component_="_hashlib.pyd" FileName="LICENSE" Attributes="0" SourcePath="LICENSE" SelfReg="false" NextFile="README.md"/>
+    <ROW File="LICENSE" Component_="_hashlib.pyd" FileName="LICENSE" Attributes="0" SourcePath="LICENSE" SelfReg="false" NextFile="readme.txt"/>
     <ROW File="PyQt4.QtCore.pyd" Component_="_hashlib.pyd" FileName="PYQT4Q~1.PYD|PyQt4.QtCore.pyd" Attributes="0" SourcePath="dist_win\PyQt4.QtCore.pyd" SelfReg="false" NextFile="PyQt4.QtGui.pyd"/>
     <ROW File="PyQt4.QtGui.pyd" Component_="_hashlib.pyd" FileName="PYQT4Q~2.PYD|PyQt4.QtGui.pyd" Attributes="0" SourcePath="dist_win\PyQt4.QtGui.pyd" SelfReg="false" NextFile="python27.dll"/>
     <ROW File="PyQt4.phonon.pyd" Component_="_hashlib.pyd" FileName="PYQT4P~1.PYD|PyQt4.phonon.pyd" Attributes="0" SourcePath="dist_win\PyQt4.phonon.pyd" SelfReg="false" NextFile="PyQt4.QtCore.pyd"/>
     <ROW File="QtCore4.dll" Component_="QtCore4.dll" FileName="QtCore4.dll" Attributes="0" SourcePath="dist_win\QtCore4.dll" SelfReg="false" NextFile="QtGui4.dll"/>
     <ROW File="QtGui4.dll" Component_="QtGui4.dll" FileName="QtGui4.dll" Attributes="0" SourcePath="dist_win\QtGui4.dll" SelfReg="false" NextFile="sip.pyd"/>
-    <ROW File="README.md" Component_="_hashlib.pyd" FileName="README.md" Attributes="0" SourcePath="README.md" SelfReg="false"/>
     <ROW File="_hashlib.pyd" Component_="_hashlib.pyd" FileName="_hashlib.pyd" Attributes="0" SourcePath="dist_win\_hashlib.pyd" SelfReg="false" NextFile="_yaml.pyd"/>
     <ROW File="_yaml.pyd" Component_="_hashlib.pyd" FileName="_yaml.pyd" Attributes="0" SourcePath="dist_win\_yaml.pyd" SelfReg="false" NextFile="background.png"/>
     <ROW File="a01d340c152e3b0f94bc46bc1702161d.mp3" Component_="e02415e5c24a6348bab39f360524d.mp3" FileName="A01D34~1.MP3|a01d340c152e3b0f94bc46bc1702161d.mp3" Attributes="0" SourcePath="dist_win\courses\audio\pt-pt\a01d340c152e3b0f94bc46bc1702161d.mp3" SelfReg="false" NextFile="a02edc174383323fca5285f527f8e570.mp3"/>
@@ -2408,6 +2408,7 @@
     <ROW File="phonon_ds94.dll" Component_="phonon_ds94.dll" FileName="PHONON~1.DLL|phonon_ds94.dll" Attributes="0" SourcePath="dist_win\phonon_backend\phonon_ds94.dll" SelfReg="false" NextFile="wordbyword_de.qm"/>
     <ROW File="ptmind.yml" Component_="dept.yml" FileName="pt-mind.yml" Attributes="0" SourcePath="dist_win\courses\pt-mind.yml" SelfReg="false" NextFile="phonon_ds94.dll"/>
     <ROW File="python27.dll" Component_="python27.dll" FileName="python27.dll" Attributes="0" SourcePath="dist_win\python27.dll" SelfReg="false" NextFile="QtCore4.dll"/>
+    <ROW File="readme.txt" Component_="_hashlib.pyd" FileName="readme.txt" Attributes="0" SourcePath="readme.txt" SelfReg="false"/>
     <ROW File="sip.pyd" Component_="_hashlib.pyd" FileName="sip.pyd" Attributes="0" SourcePath="dist_win\sip.pyd" SelfReg="false" NextFile="unicodedata.pyd"/>
     <ROW File="unicodedata.pyd" Component_="_hashlib.pyd" FileName="UNICOD~1.PYD|unicodedata.pyd" Attributes="0" SourcePath="dist_win\unicodedata.pyd" SelfReg="false" NextFile="wordbyword.desktop"/>
     <ROW File="wordbyword.desktop" Component_="_hashlib.pyd" FileName="WORDBY~1.DES|wordbyword.desktop" Attributes="0" SourcePath="dist_win\wordbyword.desktop" SelfReg="false" NextFile="wordbyword.exe"/>
@@ -2442,7 +2443,7 @@
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
-    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="li.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="licenseforsetup.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
     <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
@@ -2478,13 +2479,14 @@
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#wordbyword.exe]"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_SETMIXINSTLOCATION" Type="1" Source="aicustact.dll" Target="MixedAllUsersInstallLocation"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
-    <ROW Action="AI_ViewReadme" Type="1" Source="aicustact.dll" Target="[#README.md]"/>
+    <ROW Action="AI_ViewReadme" Type="1" Source="aicustact.dll" Target="[#readme.txt]"/>
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder][ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[DesktopFolder]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
