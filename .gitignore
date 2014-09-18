@@ -35,3 +35,4 @@ nosetests.xml
 .pydevproject
 
 dist_win
+WordByWord-cache

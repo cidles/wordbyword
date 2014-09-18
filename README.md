@@ -9,13 +9,12 @@ display the solution. WordByWord supports several modes for learning:
 you may just display the words, answer multiple choice questions or 
 input the correct translation for the given word.
 WordByWord uses YAML input files and is based on the Qt Framework. The
-program is written in Python. So WordByWord is platform independant.
-See the screenshots on the side to see WordByWord running
-on a desktop and on the tablet.
+program is written in Python. So WordByWord is platform independent.
+See the screenshots on the site to see WordByWord running
+on a desktop.
 
 The software is licensed under the GNU General Public License (see 
 LICENSE file).
-
 
 
 Requirements
@@ -45,7 +44,6 @@ Download
 
 - Windows setup: wordbyword-1.0.0.exe
 - TAR.GZ for all other platforms: wordbyword-1.0.0.tar.gz
-- TAR.GZ package for Maemo: wordbyword-maemo-0.2.0.tar.gz
 
 
 Usage
@@ -74,4 +72,3 @@ If you have any questions or ideas about WordByWord just write an email
 to:
 
 pbouda@cidles.eu
-
